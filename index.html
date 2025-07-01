@@ -795,11 +795,7 @@ async function clickBtn() {
 				<div class="columns small-12">
 					<div class="btn-box">
 						<p class="microcopy">その他の事例も見たい方はこちらから</p>
-						<a href="javascript:void(0);" class="btn btn-free btn-l"
-   onClick="(function(el){ (async() => {
-     await MyrecTraceClick.sendLog('jirei','jireiBtn');
-     setTimeout(() => { location.href='../form/document-jirei/'; }, 100); // 遷移を遅らせる
-   })(); })(this);">事例集をダウンロード</a>
+						<a href="../form/document-jirei/" class="btn btn-free btn-l jirei-log">事例集をダウンロード</a>
 					</div>
 				</div>
 			</div>
@@ -1065,7 +1061,7 @@ $( function() {
 	} );
 } );
 
-document.addEventListener('DOMContentLoaded', () => {
+<!--document.addEventListener('DOMContentLoaded', () => {
 	const tableContainers = document.querySelectorAll('.card-area');
 
 	for (const tableContainer of tableContainers) {
@@ -1087,7 +1083,24 @@ document.addEventListener('DOMContentLoaded', () => {
 			scrollHint.classList.remove('scroll-hint--show');
 		});
 	}
+});-->
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.jirei-log');
+  if (btn) {
+    btn.addEventListener('click', async (e) => {
+      e.preventDefault(); // ページ遷移を止める
+      try {
+        if (typeof MyrecTraceClick !== 'undefined' && MyrecTraceClick.sendLog) {
+          await MyrecTraceClick.sendLog('jirei', 'jireiBtn');
+        }
+      } catch (e) {
+        console.warn('ログ送信失敗:', e);
+      }
+      window.location.href = btn.href;
+    });
+  }
 });
+
 </script>
 
 <script>
