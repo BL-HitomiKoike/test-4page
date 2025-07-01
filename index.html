@@ -1,47 +1,1170 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>人材特化型 LINEツール マイリク</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="../js/splide.min.js"></script>
-  <script src="../js/splide-extension-auto-scroll.min.js"></script>
-  <script src="../js/script.js"></script>
-  <script type="text/javascript">
-    // 仮のログ送信関数（本番環境ではtrace_c.jsにより提供）
-    const MyrecTraceClick = {
-      sendLog: async function(category, label) {
-        return new Promise((resolve) => {
-          console.log('ログ送信: ', category, label);
-          setTimeout(resolve, 300);
-        });
-      }
-    };
-  </script>
+<meta charset="UTF-8">
+<title>人材特化型 LINEツール マイリク</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="人材紹介・人材派遣に特化したLINEツール。集客と採用、定着・離職防止までを実現">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../css/reset.min.css">
+<link rel="stylesheet" href="../css/foundation.min.css">
+<link rel="stylesheet" href="../css/remodal.min.css">
+<link rel="stylesheet" href="../css/splide.min.css">
+<link rel="stylesheet" href="../css/lp-haken2.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/splide.min.js"></script>
+<script src="../js/splide-extension-auto-scroll.min.js"></script>
+<script src="../js/script.js"></script>
+<link rel="canonical" href="https://myric.jp/ma/haken/">
+<link rel="icon" href="/favicons/favicon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="website">
+<meta property="og:title" content="人材特化型 LINEツール マイリク">
+<meta property="og:url" content="https://myric.jp/ma/haken/">
+<meta property="og:image" content="https://myric.jp/ma/images/lp-haken/ogp.png">
+<meta property="og:site_name" content="人材特化型 LINEツール マイリク">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MK7J5VL');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Test Code -->
+<script type="text/javascript">
+var _0x49f6=['pushState','appendChild','https://client-api.ma.myrec.jp','scrollHeight','querySelector','substring','substr','localStorage','addEventListener','body','split','&refererurl=','location','iframe','#ifram_src','contentWindow','length','scrollTop','clientHeight','ceil','getElementsByTagName','href','documentElement','&localtitle='];var _0x2906=function(_0x49f60e,_0x2906c5){_0x49f60e=_0x49f60e-0x0;var _0x536740=_0x49f6[_0x49f60e];return _0x536740;};var page_percentage=0x0;var page_title=document['title'];var page_referer=document['referrer'];var page_href=window['location'][_0x2906('0x15')];var script_trace=document['createElement'](_0x2906('0xd'));var myrec_cid='trace_719c4746-ff5c-11ed-8ea6-000000000401';var myrec_clientid=getQueryVariableMyrec(document['location']['search'],myrec_cid);if(myrec_clientid){window[_0x2906('0x7')]['setItem'](myrec_cid,myrec_clientid);}else{myrec_clientid=window['localStorage']['getItem'](myrec_cid);}var myrec_param=window['location'][_0x2906('0x15')]['replace'](window[_0x2906('0xc')]['origin'],'');myrec_param=myrec_param[_0x2906('0xa')](myrec_cid);var myrec_stateObject={};var myrec_newUrl=myrec_param[0x0];var onstep_spl=myrec_newUrl[_0x2906('0x6')](myrec_newUrl[_0x2906('0x10')]-0x1,myrec_newUrl[_0x2906('0x10')]);if('?'==onstep_spl||'&'==onstep_spl){myrec_newUrl=myrec_newUrl[_0x2906('0x5')](0x0,myrec_newUrl[_0x2906('0x10')]-0x1);}history[_0x2906('0x0')](myrec_stateObject,'',myrec_newUrl);script_trace['src']='https://client-api.ma.myrec.jp/trace/cookie.html?cid=719c4746-ff5c-11ed-8ea6-000000000401&ctype=ordinary&localurl='+page_href+_0x2906('0xb')+page_referer+_0x2906('0x17')+encodeURI(page_title)+'&'+myrec_cid+'='+myrec_clientid;script_trace['id']='ifram_src';document[_0x2906('0x14')]('head')[0x0][_0x2906('0x1')](script_trace);setTimeout(function(){var _0x71e8a4=document[_0x2906('0x4')](_0x2906('0xe'));var _0x3b2bca=document[_0x2906('0x16')][_0x2906('0x3')]||document[_0x2906('0x9')]['scrollHeight'];var _0x5ab951=document['documentElement'][_0x2906('0x12')]||document['body'][_0x2906('0x12')];if(_0x3b2bca>_0x5ab951){window[_0x2906('0x8')]('scroll',function(_0xc1a95d){var _0x494a73=document[_0x2906('0x16')][_0x2906('0x11')]||document[_0x2906('0x9')][_0x2906('0x11')];var _0x1a1356=_0x3b2bca-_0x5ab951-_0x494a73;if(page_percentage<0x64){page_percentage=Math[_0x2906('0x13')]((_0x5ab951+_0x494a73)/_0x3b2bca*0x64);_0x71e8a4[_0x2906('0xf')]['postMessage']('page_percentage='+page_percentage,_0x2906('0x2'));}else{}});}else{page_percentage=0x64;}_0x71e8a4[_0x2906('0xf')]['postMessage']('page_percentage='+page_percentage,_0x2906('0x2'));},0x3e8);function getQueryVariableMyrec(_0x26e058,_0x4b612a){var _0x3100e3=_0x26e058[_0x2906('0x5')](0x1);var _0x13b4df=_0x3100e3[_0x2906('0xa')]('&');for(var _0x11cd20=0x0;_0x11cd20<_0x13b4df[_0x2906('0x10')];_0x11cd20++){var _0x47541f=_0x13b4df[_0x11cd20]['split']('=');if(_0x47541f[0x0]==_0x4b612a){return _0x47541f[0x1];}}return![];}
+</script>
+<script type="text/javascript">
+var _0x5818=['appendChild','myrec_trace_script','text/javascript','script','getElementsByTagName','head','src','https://client-api.ma.myrec.jp/trace/trace_c.js?myrec_c_cid=719c4746-ff5c-11ed-8ea6-000000000401'];var _0x20eb=function(_0x581857,_0x20eb8e){_0x581857=_0x581857-0x0;var _0x4dbf1b=_0x5818[_0x581857];return _0x4dbf1b;};var script_trace=document['createElement'](_0x20eb('0x3'));script_trace['type']=_0x20eb('0x2');script_trace[_0x20eb('0x6')]=_0x20eb('0x7');script_trace['id']=_0x20eb('0x1');document[_0x20eb('0x4')](_0x20eb('0x5'))[0x0][_0x20eb('0x0')](script_trace);
+async function clickBtn() {
+	await MyrecTraceClick.sendLog('jirei','jireiBtn');
+}
+</script>
+<!-- End Test Code -->
+
 </head>
 <body class="page">
-  <!-- ボタンクリックログ送信付きリンク -->
-  <div class="btn-box">
-    <p class="microcopy">その他の事例も見たい方はこちらから</p>
-    <a href="../form/document-jirei/" class="btn btn-free btn-l" id="downloadCaseBtn">事例集をダウンロード</a>
-  </div>
 
-  <!-- クリックイベントハンドラ -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const btn = document.getElementById('downloadCaseBtn');
-      if (btn) {
-        btn.addEventListener('click', async (e) => {
-          e.preventDefault();
-          try {
-            await MyrecTraceClick.sendLog('jirei', 'jireiBtn');
-          } catch (err) {
-            console.warn('ログ送信に失敗しました', err);
-          }
-          window.location.href = btn.href;
-        });
-      }
-    });
-  </script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK7J5VL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="wrapper">
+
+	<!-- header -->
+	<header class="header">
+		<h1 class="logo">
+			<picture>
+				<source media="(max-width: 640px)" srcset="../images/lp-haken/logo_sp.svg">
+				<img src="../images/lp-haken/logo.svg" alt="マイリク（株式会社ブレイン・ラボ）" width="133" height="48">
+			</picture>
+		</h1>
+		<nav class="nav">
+			<ul>
+				<li><a href="#kinou">主な機能</a></li>
+				<li><a href="#price">料金体系</a></li>
+				<li><a href="#case">導入事例</a></li>
+				<li><a href="#kouka">導入効果</a></li>
+				<li><a href="#support">サポート体制</a></li>
+				<li><a href="#faq">FAQ</a></li>
+			</ul>
+			<a href="../form/trial/" class="btn btn-free btn-s trial_head"><i class="icn icn-pc"></i>無料トライアル</a>
+			<a href="../form/haken-document-all/" class="btn btn-dl btn-s doc_head"><i class="icn icn-dl"></i>資料ダウンロード</a>
+		</nav>
+		<div class="hamburger">
+			<a href="#modal" aria-label="Open" data-remodal-target="modal">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+	</header>
+	<!-- /header -->
+
+	<div class="mainarea">
+		<div class="row">
+			<div class="columns small-12 medium-6">
+				<div class="tag"><img src="../images/lp-haken/main-tag3.svg" alt="人材特化型 公式LINE拡張ツール" width="408" height="61"></div>
+				<h2 class="main-title"><span>求職者</span>を<span>獲得</span>し<br>
+					<span class="deep">意欲</span>を<span class="deep">スコアリング</span><br>
+					<span>面談・応募・採用数</span>が<span>UP</span></h2>
+				<div class="product-logo">
+					<img src="../images/lp-haken/main-logo.svg" alt="マイリク" width="278" height="57">
+					<img src="../images/lp-haken/line-tool.svg" alt="LINEツール" width="241" height="40">
+				</div>
+				<div class="jisseki"><img src="../images/lp-haken/main-jisseki1.svg" alt="業界実績20年以上" width="227" height="119">　<img src="../images/lp-haken/main-jisseki2.svg" alt="導入企業1300社以上" width="227" height="119"></div>
+			</div>
+			<div class="columns small-12 medium-6">
+<!--				<div class="main-cta"><img src="../images/lp-haken/mainimage3.png" alt="" width="1156" height="1190">
+					<div class="main-btn-zone">
+						<a href="../form/haken-document-all/"><img src="../images/lp-haken/cta-img2.png" alt="3点資料ダウンロード" width="380" height="116"></a>
+						<a href="../form/haken-document-all/" class="btn btn-dl btn-wide doc_TOP"><i class="icn icn-dl"></i>3点資料ダウンロード</a>
+						<span class="main-contact"><i class="icn icn-mail"></i><a href="../form/contact/">お問い合わせ</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+-->
+<!--
+	<div class="row show-for-small-only sp-btn">
+		<div class="columns small-6">
+			<img src="../images/lp-haken/main-jisseki1.svg" alt="業界実績20年以上" width="227" height="119">
+		</div>
+		<div class="columns small-6">
+			<img src="../images/lp-haken/main-jisseki2.svg" alt="導入企業1300社以上" width="227" height="119">
+		</div>
+	</div>
+-->
+	<!-- main -->
+	<main class="main">
+<!--
+		<article class="block block-slider">
+			<div class="blcok-title">
+				<h2 class="title">シリーズ導入実績</h2>
+			</div>
+			<div id="slider" class="splide works-slider" role="slider" aria-roledescription="slider">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo16.png" alt="EXPERT STAFF" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo17.png" alt="UTエイム" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo6.png" alt="CDP" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo9.png" alt="ミクラス介護" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo10.png" alt="STAFF BANK" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo11.png" alt="Jincast" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo15.png" alt="MUSUBU" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo2.png" alt="Precious Partners" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo12.png" alt="KOSMO" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo13.png" alt="みらいキャリア" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo8.png" alt="medical care works" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo14.png" alt="ホップ" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo7.png" alt="HumanLife" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo5.png" alt="CCNet" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo3.png" alt="REGLOS" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo4.png" alt="株式会社ケイトー" width="160" height="52"></li>
+						<li class="splide__slide"><img src="../images/lp-haken/slider-logo1.png" alt="人材派遣のTRIPLEWIN" width="160" height="52"></li>
+					</ul>
+				</div>
+			</div>
+			<p class="notes">※ブレイン・ラボ製品（MatchiinGood・careerplus・マイリクシリーズ）の累積導入社数とります。</p>
+		</article>
+<!--
+		<article class="block block-nayami2 block-green">
+			<div class="blcok-title">
+				<h2 class="title">人材派遣・人材紹介業でこんな「お悩み」ありませんか？</h2>
+			</div>
+
+			<div class="row align-center">
+				<div class="columns small-12 kiten">
+					<div class="nayami-message">
+						<span>その悩み</span>
+						<span class="nayami-logo"><img src="../images/lp-haken/nayami-logo.png" alt="マイリクで" width="239" height="48"></span>
+						<span>で解決できます！</span>
+					</div>
+					<div id="nayami-slider" class="splide" role="nayami-slider">
+						<div class="splide__track">
+							<div class="splide__list">
+								<div class="splide__slide">
+									<div class="nayami-box">
+										<h3 class="box-title">スタッフ稼働数が<br>
+											伸び悩んでいる</h3>
+										<figure><img src="../images/lp-haken/nayami1.png" alt="スタッフ稼働数が伸び悩んでいる" width="750" height="500"></figure>
+										<div class="kaiketsu">
+											<h4>LINEひとつで<br>求職者を獲得し採用数UP</h4>
+											<ul>
+												<li>面倒な入力作業ナシ！QRコードからLINEで「お友だち追加」！</li>
+												<li>流入経路分析で、効果的な集客方法が一目でわかる！</li>
+												<li>応募意欲のスコアリングで個別最適なアプローチで応募を促進！</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="splide__slide">
+									<div class="nayami-box box-gray">
+										<h3 class="box-title">スタッフの不満が<br>
+											リアルタイムに把握できない</h3>
+										<figure><img src="../images/lp-haken/nayami2.png" alt="就労スタッフの不満がリアルタイムに把握できない" width="750" height="500"></figure>
+										<div class="kaiketsu">
+											<h4>離職兆候の検知や<br>離職要因の特定</h4>
+											<ul>
+												<li>3種類の診断・アンケートを実施し、モチベーション状態を把握！</li>
+												<li>スコアリングによる離職予兆アラートで、悩みを迅速にキャッチ！</li>
+												<li>LINEによる1to1コミュニケーションで気軽に相談する環境を用意</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="splide__slide">
+									<div class="nayami-box">
+										<h3 class="box-title">求職者・スタッフとの<br>
+											コミュニケーションが<br>
+											取れていない</h3>
+										<figure><img src="../images/lp-haken/nayami3.png" alt="求職者・就労タッフとのコミュニケーションが取れていない" width="750" height="500"></figure>
+										<div class="kaiketsu">
+											<h4>効率化で<br>
+												付加価値業務を手厚く</h4>
+											<ul>
+												<li>問い合わせを電話からLINEに切り替え、優先順位をつけて対応！</li>
+												<li>よくあるご質問や問い合わせには、チャットボットで自動応対！</li>
+												<li>業務の効率化で、人が寄り添うべき問題に時間をかけられる！</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__arrows">
+							<button class="splide__arrow splide__arrow--prev button prev"><img src="../images/lp-haken/slider-prev-circle.svg" alt="前へ" width="40" height="40"></button>
+							<button class="splide__arrow splide__arrow--next button next"><img src="../images/lp-haken/slider-next-circle.svg" alt="次へ" width="40" height="40"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="block block-green">
+			<div class="blcok-title">
+				<h2 class="title">採用から定着まで活用できる<br>
+					人材業界特化のコミュニケーションツール「マイリク」とは</h2>
+				<p class="copy">LINE公式アカウントの機能と拡張し、<br>
+					求職者の獲得から応募促進、採用決定に至るまでの各プロセスで成果を生み出し人材定着を実現</p>
+			</div>
+			<div class="row">
+				<div class="columns small-6 medium-3">
+					<div class="tile">
+						<figure><img src="../images/lp-haken/whatis1.png" alt="求職者獲得" width="416" height="276"></figure>
+						<p>求職者獲得</p>
+					</div>
+				</div>
+				<div class="columns small-6 medium-3">
+					<div class="tile">
+						<figure><img src="../images/lp-haken/whatis2.png" alt="面談数アップ" width="416" height="276"></figure>
+						<p>面談数アップ</p>
+					</div>
+				</div>
+				<div class="columns small-6 medium-3">
+					<div class="tile">
+						<figure><img src="../images/lp-haken/whatis3.png" alt="採用・決定数アップ" width="416" height="276"></figure>
+						<p>採用・決定数アップ</p>
+					</div>
+				</div>
+				<div class="columns small-6 medium-3">
+					<div class="tile">
+						<figure><img src="../images/lp-haken/whatis4.png" alt="定着向上・離職防止" width="416" height="276"></figure>
+						<p>定着向上・離職防止</p>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="block block-point">
+			<div class="blcok-title">
+				<h2 class="title">マイリクだからできる３つのポイント</h2>
+			</div>
+			<div class="row">
+				<div class="columns small-6 large-4">
+					<div class="tile">
+						<div class="num"><img src="../images/lp-haken/num1_tab.svg" alt="Tab1" width="56" height="44"></div>
+						<h3>応募数増加・決定率UP</h3>
+						<figure><img src="../images/lp-haken/point1.png" alt="応募数増加・決定率UP" width="750" height="500"></figure>
+					</div>
+				</div>
+				<div class="columns small-6 large-4">
+					<div class="tile">
+						<div class="num"><img src="../images/lp-haken/num2_tab.svg" alt="Tab2" width="60" height="50"></div>
+						<h3>離職未然防止・定着率UP</h3>
+						<figure><img src="../images/lp-haken/point2.png" alt="離職未然防止・定着率UP" width="750" height="500"></figure>
+					</div>
+				</div>
+				<div class="columns small-6 large-4">
+					<div class="tile">
+						<div class="num"><img src="../images/lp-haken/num3_tab.svg" alt="Tab3" width="60" height="50"></div>
+						<h3>業務効率化</h3>
+						<figure><img src="../images/lp-haken/point3.png" alt="業務効率化" width="750" height="500"></figure>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<aside class="block block-cta">
+			<div class="blcok-title">
+				<h2 class="title">マイリクなら求職者獲得・成約率アップ<br>
+					スタッフの離職未然防止を実現！</h2>
+			</div>
+			<div class="row">
+				<div class="columns small-12 medium-6 right-align">
+					<div class="btn-box">
+						<p class="microcopy">まずはお試し！</p>
+						<a href="../form/trial/" class="btn btn-free btn-l trial_1"><i class="icn icn-pc"></i>無料トライアル</a>
+					</div>
+				</div>
+				<div class="columns small-12 medium-6">
+					<div class="btn-box">
+						<p class="microcopy">お役立ち3点セット</p>
+						<a href="../form/haken-document-all/" class="btn btn-dl btn-l doc_1"><i class="icn icn-dl"></i>資料ダウンロード</a>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<article id="kinou" class="block block-tab">
+			<div class="blcok-title">
+				<h2 class="title">マイリクの主要な3機能</h2>
+			</div>
+			<ul class="tab">
+				<li class="active"><a href="#tab1">応募数増加・決定率UP</a></li>
+				<li><a href="#tab2">離職未然防止・定着率UP</a></li>
+				<li><a href="#tab3">業務効率化</a></li>
+			</ul>
+
+			<div id="tab1" class="area is-active">
+				<h3 class="copy">求職者獲得・成約率向上に役立ちます。</h3>
+				<div class="card-area">
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab1-1.jpg" alt="求職者のパーソナライズ" width="750" height="500"></figure>
+						<h4 class="card-title">求職者のパーソナライズ</h4>
+						<p>求職者の希望条件や、業務経験、資格情報、興味関心などの情報を収集・タグ付けし、パーソナライズします。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab1-2.jpg" alt="求人案内のセグメント配信" width="750" height="500"></figure>
+						<h4 class="card-title">求人案内のセグメント配信</h4>
+						<p>パーソナライズされた求職者に対して、興味・関心が高い求人案内を効果的・効率的に自動配信します。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab1-3.jpg" alt="応募意欲のスコアリング" width="750" height="500"></figure>
+						<h4 class="card-title">応募意欲のスコアリング</h4>
+						<p>配信した求人案内を、いつ・誰がどんな頻度で 訪れたか等を独自アルゴリズムで計測し、応募意欲の高まりをリアルタイムでスコアリング。応募検討時期を見逃しません。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab1-4.jpg" alt="流入経路の測定" width="750" height="500"></figure>
+						<h4 class="card-title">流入経路の測定</h4>
+						<p>webサイト、SNS広告、チラシ、面談など、LINE友だち登録までの流入経路を把握でき、その後のマーケティング施策に活かせます。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab1-5.jpg" alt="豊富なメッセージテンプレート" width="750" height="500"></figure>
+						<h4 class="card-title">豊富なメッセージテンプレート</h4>
+						<p>求人案内・応募に特化したリッチメッセージのテンプレートを用意し、誰でも簡単にメッセージを作成する事ができます。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab1-6.jpg" alt="メール配信機能" width="750" height="500"></figure>
+						<h4 class="card-title">メール配信機能</h4>
+						<p>メールで連絡を希望する求職者やスタッフにも、セグメント配信や応募スコアリングなどLINEサービスと同じ機能がご利用いただけます。</p>
+					</div>
+				</div>
+			</div>
+			<div id="tab2" class="area">
+				<h3 class="copy">離職未然防止・定着率向上に役立ちます。</h3>
+				<div class="card-area">
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab2-1.jpg" alt="パルスサーベイ" width="750" height="500"></figure>
+						<h4 class="card-title">パルスサーベイ</h4>
+						<p>1分程度で回答できる簡易的なアンケートを頻繁に実施し、スタッフのモチベーションや、短期的に解決できる問題が把握できます。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab2-2.jpg" alt="従業員満足度調査" width="750" height="500"></figure>
+						<h4 class="card-title">従業員満足度調査</h4>
+						<p>職務を通じ、達成感や成長実感などを感じられているか（動機づけ要因）、職場環境や労働条件、人間関係はどうか（衛生要因）を調査し、スタッフの抱えている課題を把握できます。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab2-3.jpg" alt="eNPS調査" width="750" height="500"></figure>
+						<h4 class="card-title">eNPS調査</h4>
+						<p>家族や友人など、親しい人に対し、自分の派遣元をどのくらい推奨したいかを数値化することで、派遣元に対する意識調査を実施できます。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab2-4.jpg" alt="離職予兆のリスク分析" width="750" height="500"></figure>
+						<h4 class="card-title">離職予兆のリスク分析</h4>
+						<p>パルスサーベイ・従業員満足度調査・ eNPS 調査を総合分析し、離職予兆をスコア化し算出。離職防止の早期アクションが行え定着向上につなげます。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab2-5.jpg" alt="離職自動アラート" width="750" height="500"></figure>
+						<h4 class="card-title">離職自動アラート</h4>
+						<p>離職リスクが高まっているスタッフがいた場合、自動でアラートが出るしくみです。アラートの出ているスタッフの状況を共有する機能を使い、会社全体でフォローすることができます。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab2-6.jpg" alt="メールアドレス機能" width="750" height="500"></figure>
+						<h4 class="card-title">メールアドレス機能</h4>
+						<p>LINEを利用していないスタッフに対しても、LINEを使った場合と同じようにパルスサーベイ、従業員満足度調査、eNPS調査の実施から、離職予兆のリスク分析まで、メールで対応することができます。</p>
+					</div>
+				</div>
+			</div>
+			<div id="tab3" class="area">
+				<h3 class="copy">人材派遣業務の効率化に役立ちます。</h3>
+				<div class="card-area">
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab3-1.jpg" alt="リッチメニュー自動切替" width="750" height="500"></figure>
+						<h4 class="card-title">リッチメニュー自動切替</h4>
+						<p>LINEのトーク画面下部に固定されるリッチメニュー（タイル状のメニュー）を、求職中と就業中と、スタッフのステイタスごとに出しわけることができます。そのほか、派遣先企業ごとや、流入経路によって自動で変更することも可能です。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab3-2.jpg" alt="チャットボット" width="750" height="500"></figure>
+						<h4 class="card-title">チャットボット</h4>
+						<p>スタッフ登録の方法や、求人情報の詳細など求職中の疑問点や、就労時の就労規則や休暇連絡の方法など、よくある質問をチャットボット化することで、自動応答にすることができます。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab3-3.jpg" alt="多言語対応・自動翻訳" width="750" height="500"></figure>
+						<h4 class="card-title">多言語対応・自動翻訳</h4>
+						<p>求人配信・チャットのやり取りなどに自動翻訳機能を搭載。13ヶ国語（約100ヶ国）・日本国内で働く外国人労働者の約75%に対応しています。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab3-4.jpg" alt="回答(アンケート)フォーム" width="750" height="500"></figure>
+						<h4 class="card-title">回答(アンケート)フォーム</h4>
+						<p>任意の質問をアンケート形式で作成できます。回答結果にタグ付をするこで、セグメント配信に活用することも可能です。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab3-5.jpg" alt="ToDo管理" width="750" height="500"></figure>
+						<h4 class="card-title">ToDo管理</h4>
+						<p>面談の設定や、電話・チャットでのやり取りなど、リマインド機能によりタスク漏れを防ぎます。求職者、スタッフ一人ひとりに寄り添った対応が可能になります。</p>
+					</div>
+					<div class="card">
+						<figure><img src="../images/lp-haken/tab3-6.jpg" alt="CRM機能" width="750" height="500"></figure>
+						<h4 class="card-title">CRM機能</h4>
+						<p>人材派遣業務における簡易的なCRM機能を搭載し、求職者から就労スタッフまで一元管理できます。</p>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<aside class="block block-split block-cta">
+			<div class="row">
+				<div class="columns small-12 medium-6">
+					<div class="blcok-title">
+						<h2 class="title">人材獲得に最適なLINEツール<br>
+							マイリク資料3点セット</h2>
+					</div>
+					<p class="microcopy">機能から料金・導入事例までまるわかり</p>
+					<a href="../form/haken-document-all/" class="btn btn-dl btn-wide doc_2"><i class="icn icn-dl"></i>マイリク3点セット ダウンロード</a>
+				</div>
+				<div class="columns small-12 medium-6">
+					<a href="../form/haken-document-all/" class="doc_2_img"><img src="../images/lp-haken/download1_v3.png" alt="マイリクまるわかりガイド" width="750" height="422"></a>
+				</div>
+			</div>
+		</aside>
+
+		<article id="price" class="block block-price">
+			<div class="blcok-title">
+				<h2 class="title">手軽にスタートできる料金プランからご用意</h2>
+				<p class="copy">LINEお友だち管理人数等に応じて料金は決まります。詳しくはお問い合わせください</p>
+			</div>
+			<div class="row">
+				<div class="columns small-12">
+					<div class="price-box">
+						<p class="line-friend"><span>低価格でスタート 最速一週間でご利用できます</span></p>
+						<div class="price-grid-simple">
+							<div class="box start">
+								<h3 class="plan-name">初期費用</h3>
+								<div class="plan-content">
+									<p><img src="../images/lp-haken/icn-money.svg" alt="" width="348" height="173" class="icn"></p>
+								</div>
+							</div>
+							<div class="box subscription">
+								<h3 class="plan-name">月額料金</h3>
+								<div class="plan-content">
+									<p><span class="accent">20,000</span>円/月〜</p>
+								</div>
+							</div>
+						</div>
+						<p class="message">導入設定・各種オプション機能やサービスも取り揃えております</p>
+					</div>
+					<div class="price-box">
+						<h3 class="box-title">IT導入補助金2025</h3>
+						<div class="price-hojyokin">
+							<img src="../images/lp-haken/hojyokin2.png" alt="IT導入補助金対象" width="1341" height="601">
+						</div>
+					</div>
+					<p><small>※表示は税別価格となります。※別途、LINE公式アカウントの費用がかかります。<br>
+						※ LINEお友だち管理数・離職予兆スコアリング機能利用等により初期費用・月額料金は異なります。<br>
+						※導入設定・運用設定など各種オプションサービス・機能については別途費用を頂きます。</small></p>
+				</div>
+			</div>
+		</article>
+
+		<aside class="block block-cta">
+			<div class="blcok-title">
+				<h2 class="title">人材に特化した機能から料金・活用事例まですべて知る！</h2>
+			</div>
+			<div class="row">
+				<div class="columns small-12 medium-6 right-align">
+					<div class="btn-box">
+						<p class="microcopy">無料でお試し！</p>
+						<a href="../form/trial/" class="btn btn-free btn-l trial_2"><i class="icn icn-pc"></i>無料トライアル</a>
+					</div>
+				</div>
+				<div class="columns small-12 medium-6">
+					<div class="btn-box">
+						<p class="microcopy">お役立ち3点セット</p>
+						<a href="../form/haken-document-all/" class="btn btn-dl btn-l doc_3"><i class="icn icn-dl"></i>資料ダウンロード</a>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<article id="case" class="block block-case-slider">
+			<div class="blcok-title">
+				<h2 class="title">マイリク導入事例</h2>
+			</div>
+			<div id="case-slider" class="splide" role="case-slider">
+				<div class="splide__track">
+					<div class="splide__list">
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 12</div>
+								<h3 class="case-title">仕事探しの最適化や、働きがいUPに貢献！</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case12-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]https://www.expertstaff.co.jp<br>
+											[所在地]東京本社　東京都中央区銀座1-8-16 銀座アスタービル6F<br>
+											[事業内容]人材派遣事業　紹介予定派遣事業　人材紹介事業　人材コンサルティング等<br>
+											[設立]昭和62年10月<br>
+											[資本金]7,000万円<br>
+											[代表者名]坂本貴美枝<br>
+											[企業規模]50名</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case12-logo.png" alt="株式会社エキスパートスタッフ" width="360" height="56"></figure>
+										<h4 class="company-name">株式会社エキスパートスタッフ 様</h4>
+										<p>スキルやキャリアを持ったクリエイターの方々に対し、以前は最適なマッチングが提供できていませんでした。そこで「マイリク」を導入し、求職者のスキルや希望職種に応じた仕事探しを実現。また定着支援機能を使ったアンケートを実施し…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 11</div>
+								<h3 class="case-title">ミドル層も使いやすいツールで、業務効率化</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case11-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]https://albacrew.com/<br>
+											[所在地]本社　愛知県名古屋市中村区本陣通5丁目130番地<br>
+											[事業内容]人材派遣事業、人材紹介事業、アウトソーシング事業、介護福祉車両運行管理<br>
+											[設立]2019年9月<br>
+											[資本金]2,000万円<br>
+											[代表者名]中村忠司<br>
+											[企業規模]400名（2022年1月現在／正社員・派遣社員含む）</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case11-logo.png" alt="株式会社アルバクルー" width="360" height="56"></figure>
+										<h4 class="company-name">株式会社アルバクルー 様</h4>
+										<p>当社の派遣スタッフは40〜50代から60代が多く、LINE活用に不安があったものの、将来を見据えて導入を決めました。その上でLINE拡張ツールをマイリクに切り替えたところ、使い勝手の良さやサポート体制の手厚さを実感。カスタマイズで…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 10</div>
+								<h3 class="case-title">スタッフの約9割が登録。管理機能をマイリクに集約</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case10-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]https://www.pluspivot.co.jp/<br>
+											[所在地]本社　東京都渋谷区代々木2-7-1　昇立ビル7F<br>
+											[事業内容]介護人材サービス（人材派遣事業／人材紹介事業）<br>
+											[設立]2023年4月<br>
+											[資本金]1億4000万円<br>
+											[代表者名]山本直生<br>
+											[企業規模]40名（2025年1月現在）</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case10-logo.png" alt="株式会社プラス・ピボット" width="360" height="56"></figure>
+										<h4 class="company-name">株式会社プラス・ピボット 様</h4>
+										<p>介護人材サービスを展開する当社は、「働く人を大切にしたい」という考えを持っています。まずはスタッフの管理体制を整備するためにLINE公式アカウントを導入し、併せてマイリクに管理機能を集約しました。現在はLINE登録者が約9割を占め…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 09</div>
+								<h3 class="case-title">LINE経由で若年層の登録者数は約14倍を達成</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case9-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]https://www.kosmo.co.jp<br>
+											[所在地]本社　大阪府大阪市中央区西心斎橋2-2-7　御堂筋ジュンアシダビル9F<br>
+											[事業内容]労働者派遣事業・有料職業紹介事業・アウトソーシング事業<br>
+											[設立]1986年8月<br>
+											[資本金]1億円<br>
+											[代表者名]南　昭彦<br>
+											[企業規模]約700名（2024年１月現在）</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case9-logo.png" alt="株式会社KOSMO" width="360" height="56"></figure>
+										<h4 class="company-name">株式会社KOSMO 様</h4>
+										<p>新たに起ち上げた人材紹介事業では20代を主なターゲット層にしており、コミュニケーションツールとしてLINEが最適でした。LINE公式アカウントと共に人材特化したマイリクを活用することで、若年層とのやり取りが円滑になり、情報の一元管理も…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 08</div>
+								<h3 class="case-title">大きく取り込めた潜在転職者の育成戦略に活用</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case8-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]https://mirai-jinzai.career-on.jp/<br>
+											[所在地]本社　愛知県名古屋市中区丸の内3-14-32 丸の内三丁目ビル 9F<br>
+											[事業内容]人材紹介業・転職支援サービス<br>
+											[設立]2014年11月<br>
+											[資本金]1,000万円<br>
+											[代表者名]伊藤淳平<br>
+											[企業規模]約17名（2025年1月現在）</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case8-logo.png" alt="みらい人材サポート株式会社" width="360" height="56"></figure>
+										<h4 class="company-name">みらい人材サポート株式会社 様</h4>
+										<p>積極的に各種デジタルマーケティングを展開していましたが、転職潜在層の取り込みがまだ不十分でした。潜在層獲得に向けて登録の心理的ハードルの低いLINE導入を決定し、さらに彼らを顕在層へと引き上げる狙いを実現できるツールとしてマイリクを採用。以来半年ほどで月々の友だち登録者が大きく増え…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 07</div>
+								<h3 class="case-title">面談者ほぼ100％友だち登録、若手潜在層を開拓</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case7-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]https://musubu.online/<br>
+											[所在地]本社　愛知県名古屋市中区栄三丁目6番1号 栄三丁目ビルディング10階<br>
+											[事業内容]人材紹介業、人事コンサルティング業、仲人業務<br>
+											[設立]2010年11月<br>
+											[資本金]2,000万円<br>
+											[代表者名]引地拓<br>
+											[企業規模]約30名（2024年12月現在）</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case7-logo.png" alt="株式会社MUSUBU" width="360" height="56"></figure>
+										<h4 class="company-name">株式会社MUSUBU 様</h4>
+										<p>当社のメインターゲットである若年層の取り込みにLINEは不可欠。そこでLINE公式アカウントを開設し、会社としての情報共有化、属人化解消を実現しました。面談後にはLINE友だち登録を促し、ほぼ全員の友だち登録を達成しています。さらにマイリクの機能を活用し、応募意欲をモニタリングし…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 06</div>
+								<h3 class="case-title">マイリク定着支援により定着率が約20％もUP！</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case6-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]https://www.cdpjp.com/<br>
+											[所在地]本社　栃木県宇都宮市峰2-2-1<br>
+											[事業内容]製造派遣、人材紹介、業務請負、エンジニア派遣、外国人雇用サポートサービス、再就職支援<br>
+											[設立]1987年4月9日<br>
+											[資本金]9,980万円<br>
+											[代表者名]田村篤史<br>
+											[企業規模]145名（2023年3月末現在）</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case6-logo.png" alt="シーデーピージャパン株式会社" width="360" height="56"></figure>
+										<h4 class="company-name">シーデーピージャパン株式会社 様</h4>
+										<p>スタッフ数が年々増えている中、離職率も高くなっていることが懸念事項でした。これまでは、離職の予兆を察知できるベテラン社員であれば早期にフォローできますが、着任から日が浅い場合そうもいきません。人によってバラつきのあったスタッフフォローを、マイリク定着支援を導入し…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 05</div>
+								<h3 class="case-title">個別最適化で精鋭人材の登録者数が120％増加</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case5-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]https://jincast.co.jp/<br>
+											[所在地]本社　愛知県名古屋市熱田区新尾頭三丁目2番1号 KVK 金山ビル3F<br>
+											[事業内容]労働者派遣事業、職業紹介事業、派遣法に関する人材コンサルティング業務など<br>
+											[設立]2011年1月25日<br>
+											[資本金]1,500万円<br>
+											[代表者名]蟹江誠一<br>
+											[企業規模]約340名（2024年6月現在）</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case5-logo.png" alt="株式会社ジンキャスト" width="360" height="56"></figure>
+										<h4 class="company-name">株式会社ジンキャスト 様</h4>
+										<p>メール、電話、SMS、アプリなど、連絡手段が分散しており、管理工数の増大と返答率の低さが課題でした。マイリクの機能を使いリッチメニューの出し分けすることで、求職者の状況に応じた情報提供を実現。おかげでアプローチ強化対象人材の登録率が…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 04</div>
+								<h3 class="case-title">「応募スコア」機能活用で応募数が1.7倍に！</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case4-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]http://www.keitou.co.jp/<br>
+											[所在地]本社　大阪府高槻市城北町1丁目2-6 ＮＫ城北ビル<br>
+											[事業内容]派遣事業、警備事業、防犯カメラ事業、測量事業、不動産事業<br>
+											[設立]2005年6月<br>
+											[資本金]7,000万円<br>
+											[代表者名]吉内 一洋<br>
+											[企業規模]40名（2023年3月現在）</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case4-logo.png" alt="株式会社ケイトー" width="360" height="56"></figure>
+										<h4 class="company-name">株式会社ケイトー 様</h4>
+										<p>紙で管理していた求人や求職者、スタッフの情報をマイリクで管理するようになり、大きく業務効率が上がりました。求職者の希望やスキルをセグメントできるだけでなく、マイリク特有の「応募スコア」機能で求職者の興味を把握したことで、効果的なアプローチが可能になりました。おかげで登録後に…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 03</div>
+								<h3 class="case-title">個別最適なアプローチで応募数が増加！</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case3-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]https://www.c-c-nt.com/<br>
+											[所在地]本社　群馬県前橋市古市町360-2<br>
+											[事業内容]紹介予定派遣、人材派遣事業、外国人技術者派遣事業、就職支援及び職業紹介事業、業務請負事業<br>
+											[設立]2001年8月23日<br>
+											[資本金]1,000万円<br>
+											[代表者名]小池 正律<br>
+											[企業規模]21名（2024年4月現在）</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case3-logo.png" alt="中央キャリアネット株式会社" width="360" height="56"></figure>
+										<h4 class="company-name">中央キャリアネット株式会社 様</h4>
+										<p>以前使っていたメールシステムでは、一斉送信しかできず、メールへの返信も受けられないような機能しかありませんでした。マイリクを導入し、電話のみの連絡手段から、LINEで相互コミュニケーションできるようになったことで業務効率が大きく…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 02</div>
+								<h3 class="case-title">早期離職が課題、入社後半年の定着率が86.9％に</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case2-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]https://www.humanlife-inc.com/<br>
+											[所在地]本社 岩手県盛岡市菜園1丁目11-3 カガヤ菜園ビル4F<br>
+											[事業内容]人材事業、教育・研修事業<br>
+											[設立]1989年5月30日<br>
+											[資本金]1,800万円<br>
+											[代表者名]松下 栄一<br>
+											[企業規模]258名（2020年4月現在）</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case2-logo.png" alt="株式会社ヒューマンライフ" width="360" height="56"></figure>
+										<h4 class="company-name">株式会社ヒューマンライフ 様</h4>
+										<p>離職率の高さが課題だった当社にとって、マイリク導入は大きな転機となりました。 岩手県中心に事業展開しており、人口から考えてスタッフ登録の大幅増加は見込めません。 定着率向上こそが至上命題でした。マイリクを導入したことで…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="splide__slide">
+							<div class="case-box">
+								<div class="case-num">case 01</div>
+								<h3 class="case-title">5分の掘り起こしでスタッフ稼働率120％UP！</h3>
+								<div class="case-inner">
+									<div class="case-profile">
+										<figure><img src="../images/lp-haken/case1-main.jpg" alt="" width="900" height="600"></figure>
+										<p>[URL]https://www.staffbank.co.jp/<br>
+											[所在地]本社 大阪市中央区谷町4-5-9アーク谷町6階601号室<br>
+											[事業内容]人材派遣、人材紹介、パート・アルバイト紹介、紹介予定派遣、業務委託、人材採用コンサルティング<br>
+											[設立]1999年3月23日<br>
+											[資本金]2,000万円<br>
+											[代表者名]権藤 度夫<br>
+											[企業規模]35名（2019年5月現在）</p>
+									</div>
+									<div class="case-ex">
+										<figure><img src="../images/lp-haken/case1-logo.png" alt="株式会社スタッフバンク" width="360" height="56"></figure>
+										<h4 class="company-name">株式会社スタッフバンク 様</h4>
+										<p>20、30代の若い世代の求職者との円滑なコミュニケーションのために、LINE公式アカウントを開設してみるも、設定に一苦労。しかも友達数が増やせず、結局は電話やメール、SMSでの対応になっていました。しかし、マイリクは設定も簡単で…　<a href="https://myric.jp/ma/form/document-jirei/">続きはこちら</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="splide__arrows">
+					<button class="splide__arrow splide__arrow--prev button prev"><img src="../images/lp-haken/slider-prev-circle.svg" alt="前へ" width="40" height="40"></button>
+					<button class="splide__arrow splide__arrow--next button next"><img src="../images/lp-haken/slider-next-circle.svg" alt="次へ" width="40" height="40"></button>
+				</div>
+			</div>
+-->
+			<div class="row">
+				<div class="columns small-12">
+					<div class="btn-box">
+						<p class="microcopy">その他の事例も見たい方はこちらから</p>
+						<a href="javascript:void(0);" class="btn btn-free btn-l"
+   onClick="(function(el){ (async() => {
+     await MyrecTraceClick.sendLog('jirei','jireiBtn');
+     setTimeout(() => { location.href='../form/document-jirei/'; }, 100); // 遷移を遅らせる
+   })(); })(this);">事例集をダウンロード</a>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article id="kouka" class="block block-kouka block-green">
+			<div class="blcok-title">
+				<h2 class="title">導入効果</h2>
+			</div>
+			<div class="kouka-grid">
+				<div><img src="../images/lp-haken/kouka1.png" alt="お友だちブロック率 12%改善" width="956" height="400"></div>
+				<div><img src="../images/lp-haken/kouka2.png" alt="求人応募数 2倍" width="480" height="400"></div>
+				<div><img src="../images/lp-haken/kouka3.png" alt="掘り起こし時間 最短5分" width="480" height="400"></div>
+				<div><img src="../images/lp-haken/kouka4.png" alt="スタッフ稼働数 20%UP" width="956" height="400"></div>
+			</div>
+		</article>
+
+		<article id="support" class="block block-support block-deep">
+			<div class="blcok-title">
+				<h2 class="title">安心のサポート体制</h2>
+				<p class="copy">貴社の業務フローの情報整理から、本稼働運用に向けた準備および運用検証、<br>
+					さらに導入後のアフターサポートに至るまで、成果を最大化できるよう伴走支援します。</p>
+			</div>
+			<div class="block-subtitle">
+				<h3>導入前サポート</h3>
+			</div>
+			<div class="row align-center">
+				<div class="columns small-6 large-3">
+					<div class="tile">
+						<figure><img src="../images/lp-haken/support01.png" alt="現状分析・要件定義" width="574" height="543"></figure>
+						<p>現状分析・要件定義</p>
+					</div>
+				</div>
+				<div class="columns small-6 large-3">
+					<div class="tile">
+						<figure><img src="../images/lp-haken/support02.png" alt="システム開設・設定" width="574" height="543"></figure>
+						<p>システム開設・設定</p>
+					</div>
+				</div>
+				<div class="columns small-6 large-3">
+					<div class="tile">
+						<figure><img src="../images/lp-haken/support03.png" alt="クリエイティブ制作" width="574" height="543"></figure>
+						<p>クリエイティブ制作</p>
+					</div>
+				</div>
+				<div class="columns small-6 large-3">
+					<div class="tile">
+						<figure><img src="../images/lp-haken/support04.png" alt="利活用トレーニング" width="574" height="543"></figure>
+						<p>利活用トレーニング</p>
+					</div>
+				</div>
+			</div>
+			<div class="block-subtitle">
+				<h3>利活用サポート</h3>
+			</div>
+			<div class="row align-center">
+				<div class="columns small-6 large-3">
+					<div class="tile">
+						<figure><img src="../images/lp-haken/support05.png" alt="初期サポート" width="574" height="543"></figure>
+						<p>初期サポート</p>
+					</div>
+				</div>
+				<div class="columns small-6 large-3">
+					<div class="tile">
+						<figure><img src="../images/lp-haken/support06.png" alt="成果創出サポート" width="574" height="543"></figure>
+						<p>成果創出サポート</p>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article id="faq" class="block block-faq">
+			<div class="blcok-title">
+				<h2 class="title">よくあるご質問</h2>
+				<p class="copy">マイリク導入を検討する際、よくいただくご質問にお答えします。</p>
+			</div>
+			<div class="row align-center">
+				<div class="columns small-12 medium-10 large-9">
+
+					<div class="faq">
+						<div class="faq-q">
+							<p>マイリク導入に必要な条件はありますか？</p>
+						</div>
+						<div class="faq-a">
+							<p>マイリクはLINE公式アカウントとの接続が必須になるため、LINE公式アカウントの開設が必要になります。</p>
+						</div>
+					</div>
+
+					<div class="faq">
+						<div class="faq-q">
+							<p>LINE公式アカウントと何が違うのですか？</p>
+						</div>
+						<div class="faq-a">
+							<p>LINE公式アカウントのAPI機能を利用して、採用活動や離職防止活動に特化した機能を追加した、より便利にするための別サービスとなります。</p>
+						</div>
+					</div>
+
+					<div class="faq">
+						<div class="faq-q">
+							<p>人材派遣と人材紹介業をどちらにも利用できますか？</p>
+						</div>
+						<div class="faq-a">
+							<p>人材派遣・人材紹介業どちらにでもご利用可能です。１つのLINE公式アカウントで、併用してご利用も頂けます。</p>
+						</div>
+					</div>
+
+					<div class="faq">
+						<div class="faq-q">
+							<p>拠点が複数ある場合、LINE公式アカウントは拠点数分必要ですか？</p>
+						</div>
+						<div class="faq-a">
+							<p>１つのLINE公式アカウントで複数の拠点を管理できます。</p>
+						</div>
+					</div>
+
+					<div class="faq">
+						<div class="faq-q">
+							<p>導入前に一度操作性を試してから、システムを検討したいのですが可能ですか？</p>
+						</div>
+						<div class="faq-a">
+							<p>可能です　無料トライアル環境をご利用頂けます。<br>
+								<a href="../form/contact/">お問い合わせフォーム</a>からお申込みください。</p>
+						</div>
+					</div>
+
+					<div class="faq">
+						<div class="faq-q">
+							<p>サポートやマニュアルはありますか？</p>
+						</div>
+						<div class="faq-a">
+							<p>基本的な使い方、操作方法に関するマニュアルを用意しております。また、設定代行サービス・サポートも行っております。</p>
+						</div>
+					</div>
+
+					<div class="faq">
+						<div class="faq-q">
+							<p>申し込みから導入までどのくらい時間がかかりますか？</p>
+						</div>
+						<div class="faq-a">
+							<p>運用内容により異なりますが最短２週間程度でご利用になれます。</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</article>
+
+		<aside class="block block-download block-cta">
+			<div class="blcok-title">
+				<h2 class="title">お役立ち資料を無料ダウンロード</h2>
+			</div>
+			<div class="row align-center">
+				<div id="download" class="columns small-12 medium-4">
+					<div class="shadow-box">
+						<figure><a href="../form/haken-document-jinzai/" class="doc_5_img"><img src="../images/lp-haken/download-jinzai.png" alt="LINEで人材獲得するノウハウ" width="750" height="422"></a></figure>
+						<h3 class="box-title">LINEで人材獲得するノウハウ</h3>
+						<p>求人配信の時間は？どんなメッセージが反応がいい？など人材獲得・応募数増加・決定数UPのLINE活用ノウハウを解説しています。</p>
+						<p class="c"><a href="../form/haken-document-jinzai/" class="btn btn-dl btn-s doc_5"><i class="icn icn-dl"></i>資料ダウンロード</a></p>
+					</div>
+				</div>
+				<div class="columns small-12 medium-4">
+					<div class="shadow-box">
+						<figure><a href="../form/document-teicyaku/" class="doc_6_img"><img src="../images/lp-haken/download3.png" alt="離職未然防止・定着率向上" width="750" height="422"></a></figure>
+						<h3 class="box-title">離職防止と定着率の対策</h3>
+						<p>小さな離職の予兆を察知し、未然防止策を打つことこそ、定着率UPの第一歩。LINEを活用した定着支援の方法を解説しています。</p>
+						<p class="c"><a href="../form/document-teicyaku/" class="btn btn-dl btn-s doc_6"><i class="icn icn-dl"></i>資料ダウンロード</a></p>
+					</div>
+				</div>
+				<div class="columns small-12 medium-4">
+					<div class="shadow-box">
+						<figure><a href="../form/document-line/" class="doc_7_img"><img src="../images/lp-haken/download4.png" alt="人材派遣向けLINE活用" width="750" height="422"></a></figure>
+						<h3 class="box-title">人材業向けLINE活用術</h3>
+						<p>人材業界の課題をLINE活用で解決。LINEの特徴から導入のメリットまで、わかりやすく解説します。</p>
+						<p class="c"><a href="../form/document-line/" class="btn btn-dl btn-s doc_7"><i class="icn icn-dl"></i>資料ダウンロード</a></p>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<article class="block block-deep">
+			<div class="blcok-title">
+				<h2 class="title">マイリクについてもっと詳しく知る！</h2>
+			</div>
+			<div class="row">
+				<div class="columns small-12 medium-4">
+					<p class="microcopy">お問い合わせ</p>
+					<a href="../form/contact/" class="btn-tile inquiry_footer">
+						<i class="icn icn-mail"></i>
+						<p>LINE活用や<br>
+							運用方法・お悩みを解決</p>
+						<p>相談する</p>
+					</a>
+				</div>
+				<div class="columns small-12 medium-4">
+					<p class="microcopy">もっと詳しく</p>
+					<a href="../form/haken-document-all/" class="btn-tile btn-tile-dl doc_footer">
+						<i class="icn icn-dl"></i>
+						<p>マイリクのすべてを<br>
+							いますぐ知る</p>
+						<p>資料ダウンロード</p>
+					</a>
+				</div>
+				<div class="columns small-12 medium-4">
+					<p class="microcopy">無料トライアル</p>
+					<a href="../form/trial/" class="btn-tile trial_footer">
+						<i class="icn icn-pc"></i>
+						<p>使用感や<br>
+							実際の運用を体験</p>
+						<p>試してみる</p>
+					</a>
+				</div>
+			</div>
+		</article>
+
+	</main>
+	<!-- /main -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="logo"><img src="../images/lp-haken/logo_brainlab.svg" alt="株式会社ブレイン・ラボ" width="162" height="39"></div>
+		<p>株式会社ブレイン・ラボ<br>
+			〒108-0023 東京都港区芝浦4-12-38 CANAL GATE SHIBAURA 3F<br>
+			<span class="tel"><i class="icn icn-tel"></i>03-6778-4326</span>
+		</p>
+		<div class="logo"><img src="../images/lp-haken/logo_zigen.svg" alt="株式会社じげん" width="116" height="30"></div>
+		<p>株式会社じげんグループ</p>
+	</footer>
+	<!-- /footer -->
+
+</div>
+
+<div class="row show-for-small-only sp-footer">
+	<div class="columns small-6">
+		<a href="../form/trial/" class="btn btn-free btn-s">無料トライアル</a>
+	</div>
+	<div class="columns small-6">
+		<a href="../form/haken-document-all/" class="btn btn-dl btn-s">資料ダウンロード</a>
+	</div>
+</div>
+
+<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking:false">
+	<button data-remodal-action="close" class="remodal-close"></button>
+	<p class="modal-logo"><a href="./"><img src="../images/lp-haken/logo.svg" alt="" width="133" height="48"></a></p>
+	<nav class="sp-nav">
+		<ul>
+			<li><a href="#kouka" class="hash-remodal">導入効果</a></li>
+			<li><a href="#kinou" class="hash-remodal">主な機能</a></li>
+			<li><a href="#price" class="hash-remodal">料金体系</a></li>
+			<li><a href="#case" class="hash-remodal">導入事例</a></li>
+			<li><a href="#support" class="hash-remodal">サポート体制</a></li>
+			<li><a href="#download" class="hash-remodal">お役立ち資料</a></li>
+			<li><a href="#faq" class="hash-remodal">FAQ</a></li>
+		</ul>
+	</nav>
+</div>-->
+
+<script src="../js/remodal.min.js"></script>
+<script>
+$( function() {
+	var remodal = $('[data-remodal-id=modal]').remodal();
+	$(document).on( 'click', '.hash-remodal', function() {
+		remodal.close();
+	} );
+} );
+
+document.addEventListener('DOMContentLoaded', () => {
+	const tableContainers = document.querySelectorAll('.card-area');
+
+	for (const tableContainer of tableContainers) {
+		const scrollHint = document.createElement('div');
+		scrollHint.className = 'scroll-hint scroll-hint--show';
+		scrollHint.innerText = '';
+		tableContainer.appendChild(scrollHint);
+
+		const showScrollHint = () => {
+			if (tableContainer.scrollWidth > tableContainer.clientWidth) {
+			scrollHint.classList.add('scroll-hint--show');
+			} else {
+			scrollHint.classList.remove('scroll-hint--show');
+			}
+		};
+		showScrollHint();
+
+		tableContainer.addEventListener('scroll', () => {
+			scrollHint.classList.remove('scroll-hint--show');
+		});
+	}
+});
+</script>
+
+<script>
+var slider = new Splide( '#slider', {
+	arrows: false,
+	pagination: false,
+	type   : 'loop',
+	drag   : 'free',
+	focus  : 'center',
+	fixedWidth: '160px',
+	gap: '24px',
+	autoScroll: {
+		speed: 0.7,
+	},
+} ).mount( window.splide.Extensions );
+slider.mount();
+</script>
+
+<script>
+var splide = new Splide( '#nayami-slider', {
+	arrows: false,
+	gap: '32px',
+	autoWidth: true,
+	drag: false,
+	breakpoints: {
+		640: {
+			arrows: true,
+			gap: '24px',
+			type: 'loop',
+			autoplay: true,
+			drag: true,
+			focus: 'center',
+			pagination: false,
+		},
+	},
+} );
+splide.mount();
+</script>
+
+<script>
+var splide = new Splide( '#case-slider', {
+	arrows: true,
+	type: 'loop',
+	focus: 'center',
+	autoplay: true,
+	gap: '64px',
+	autoWidth: true,
+	breakpoints: {
+		640: {
+			gap: '24px',
+		},
+	},
+} );
+splide.mount();
+</script>
+
+<script>
+(function() {
+	var didInit = false;
+	function initMunchkin() {
+		if(didInit === false) {
+			didInit = true;
+			Munchkin.init('125-BDX-829');
+		}
+		}
+	var s = document.createElement('script');
+	s.type = 'text/javascript';
+	s.async = true;
+	s.src = '//munchkin.marketo.net/munchkin.js';
+	s.onreadystatechange = function() {
+		if (this.readyState == 'complete' || this.readyState == 'loaded') {
+			initMunchkin();
+		}
+	};
+	s.onload = initMunchkin;
+	document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
 </body>
 </html>
